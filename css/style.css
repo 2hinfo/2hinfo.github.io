@@ -35,14 +35,15 @@ html{
 }
 
 body{
-  font:normal 75% Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
 
 }
 
 #content{
   position:absolute;
-  top:100px;
-  left:50px;
+  top:;
+  left:center;
 }
 
 
