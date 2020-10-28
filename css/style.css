@@ -36,7 +36,15 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+
 }
+
+#content{
+  position:absolute;
+  top:100px;
+  left:50px;
+}
+
 
 canvas{
   display:block;
@@ -88,7 +96,7 @@ canvas{
 #particles-js{
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  background-color: #000000;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;

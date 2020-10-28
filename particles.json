@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 133,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 710.2328774690454
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#ff0000"
     },
     "shape": {
       "type": "circle",
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,18 +47,19 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
+      "distance": 157.82952832645452,
+      "color": "#00f71d",
       "opacity": 0.4,
-      "width": 1
+      "width": 1.8939543399174543
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3.206824121731046,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -71,11 +72,11 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "bubble"
       },
       "resize": true
     },
@@ -87,14 +88,15 @@
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
+        "distance": 71.92807192807193,
+        "size": 15.984015984015985,
+        "duration": 0.07992007992007992,
         "opacity": 8,
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -104,13 +106,5 @@
       }
     }
   },
-  "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#b61924",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }
+  "retina_detect": true
 }
