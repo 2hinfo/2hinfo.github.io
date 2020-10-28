@@ -1,48 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<!-- SEO -->
+	<title>2H</title>
+	<meta name="description" content="2H, la migliore classe del volta!" />
+	<meta name="robots" content="index, follow" />
+	<meta name="referrer" content="always" />
+
+	<!-- Social & Open Graph -->
+	<meta property="og:title" content="2H VOLTA" />
+	<meta property="og:description" content="2H, la migliore classe del volta!" />
+	<meta property="og:image" content="https://demo.onepagelove.com/fullsingle-html/me/images/social.jpg"> <!-- include your hosted image full URL -->
+	<meta property="og:url" content="https://demo.onepagelove.com/fullsingle-html/me/" />
+	<meta name="twitter:title" content="2H VOLTA" >
+	<meta name="twitter:description" content="Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image or video, logo, bio and icons." />
+	<meta name="twitter:image" content="https://demo.onepagelove.com/fullsingle-html/me/images/social.jpg" /> <!-- include your hosted image full URL -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@onepagelove" />
+	<meta name="twitter:creator" content="@robhope" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+
+	<!-- Styles -->
+	<link rel='stylesheet' href='assets/css/me.css' type='text/css' media='screen' />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
 </head>
-<body>
+
 
 <!-- count particles1234 -->
 <div class="count-particles">
   <span class="js-count-particles">--</span> particles
 </div>
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+<body id="fullsingle" class="page-template-page-fullsingle-me">
 
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
+<div class="fs-me">
 
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+	<!-- Content Container -->
+	<div class="me-content">
+		
+		<div class="logo">
+			
+			<img src="images/logo.png" alt="Logo" />
+
+		</div>
+
+		<div class="bio" style="color:#478ae6">
+			
+			<p>La 2H, Migliore classe dell'informatico. Seguici su <a href="https://www.instagram.com/2h_volta.informatico/">Instagram</a>.</p>
+
+		</div>
+
+
+		<div class="network">
+			
+			<ul>
+				
+
+				<li>
+					<a class="icon-instagram" href="https://www.instagram.com/2h_volta.informatico/">
+						<svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M14.52,2.469H5.482c-1.664,0-3.013,1.349-3.013,3.013v9.038c0,1.662,1.349,3.012,3.013,3.012h9.038c1.662,0,3.012-1.35,3.012-3.012V5.482C17.531,3.818,16.182,2.469,14.52,2.469 M13.012,4.729h2.26v2.259h-2.26V4.729z M10,6.988c1.664,0,3.012,1.349,3.012,3.012c0,1.664-1.348,3.013-3.012,3.013c-1.664,0-3.012-1.349-3.012-3.013C6.988,8.336,8.336,6.988,10,6.988 M16.025,14.52c0,0.831-0.676,1.506-1.506,1.506H5.482c-0.831,0-1.507-0.675-1.507-1.506V9.247h1.583C5.516,9.494,5.482,9.743,5.482,10c0,2.497,2.023,4.52,4.518,4.52c2.494,0,4.52-2.022,4.52-4.52c0-0.257-0.035-0.506-0.076-0.753h1.582V14.52z"></path>
+						</svg>
+					</a>
+				</li>
+
+				<!-- email icon reference one
+				<li>
+					<a class="icon-email" href="#">
+						<svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+						</svg>
+					</a>
+				</li>
+				-->
+
+				<!-- email icon reference two
+				<li>
+					<a class="icon-email" href="#">
+						<svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M19.291,3.026c0.002-0.15-0.053-0.301-0.167-0.415c-0.122-0.122-0.286-0.172-0.444-0.161H1.196
+								c-0.16-0.011-0.322,0.039-0.444,0.161C0.637,2.725,0.583,2.875,0.585,3.026c0,0.003-0.002,0.006-0.002,0.009v14.032
+								c0,0.322,0.262,0.584,0.585,0.584h17.54c0.322,0,0.584-0.262,0.584-0.584V3.035C19.292,3.032,19.291,3.029,19.291,3.026z
+								 M17.147,3.619l-7.21,6.251L2.728,3.619H17.147z M18.122,15.896c0,0.323-0.261,0.584-0.584,0.584H2.337
+								c-0.323,0-0.585-0.261-0.585-0.584V4.292l7.732,6.704c0.013,0.017,0.019,0.035,0.034,0.052c0.115,0.114,0.268,0.169,0.419,0.166
+								c0.151,0.003,0.304-0.052,0.419-0.166c0.015-0.017,0.021-0.035,0.034-0.052l7.731-6.704V15.896z"></path>
+						</svg>
+					</a>
+				</li>
+				-->
+
+			</ul>
+
+		</div>
+
+		<div class="credit">
+
+			<p class="copyright" style="color:black">&copy;2020 <a href="https://www.instagram.com/filliravaz/">Filippo Ravazzini</a></p>
+
+
+		</div>
+
+	</div>
+
+</div>
 
 </body>
 </html>
