@@ -115,7 +115,7 @@ body.page-template-page-fullsingle-me {
   background-size: cover; }
   body.page-template-page-fullsingle-me p {
     margin-bottom: 28px;
-    color: #b6cc10; }
+    color: #00f7ff; }
     @media (max-width: 800px) {
       body.page-template-page-fullsingle-me p {
         font-size: 32px;
@@ -188,7 +188,7 @@ body.page-template-page-fullsingle-me {
     .bio {
       max-width: none; } }
   .bio a {
-    color: #CCCCCC;
+    color: #478ae6;
     -webkit-transition: 1s;
     transition: 1s; }
     .bio a:hover {
@@ -251,12 +251,12 @@ body.page-template-page-fullsingle-me {
   -webkit-animation: fadein 8s;
           animation: fadein 8s; }
   .credit p.copyright {
-    font-size: 12px;
+    font-size: 20px;
     line-height: 14px;
     font-weight: 400;
-    opacity: 0.4; }
+    opacity: 0.6; }
     .credit p.copyright a {
-      color: #999999; }
+      color: #000000; }
 
 body.page-template-page-fullsingle-me.me-video {
   background-image: none; }
