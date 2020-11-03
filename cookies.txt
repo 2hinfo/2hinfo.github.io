@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.my-free.website	TRUE	/	FALSE	1999999999	__cfduid	da1500e248fc670d4e71bd3acfbe45b321604393595
+2h-volta.my-free.website	TRUE	/	FALSE	1999999999	SameSite	Lax
+.builderservices.io	TRUE	/	FALSE	1999999999	__cfduid	d1dce06dd521f1c649f83d90b1d400cd41604393598
+runtime.builderservices.io	TRUE	/	FALSE	1999999999	SameSite	Lax
+
